@@ -6,8 +6,8 @@ The provisioned VM will have the the TFC Agents binaries installed in `/opt/tfc-
 
 ## Prerequisites
 
-* Have [Virutal Box]() installed.
-* Have [Vagrant]() installed.
+* Have [Virutal Box](https://www.virtualbox.org/wiki/Downloads) installed.
+* Have [Vagrant](https://www.vagrantup.com/downloads) installed.
 
 ## Use
 
@@ -30,7 +30,7 @@ The provisioned VM will have the the TFC Agents binaries installed in `/opt/tfc-
 vagrant ssh
 ```
 
-* Set-up the TFC agent environment variables according to the [documentation](). For example
+* Set-up the TFC agent environment variables according to the [documentation](https://www.terraform.io/docs/cloud/workspaces/agent.html#start-the-agent). For example
 
 ```bash
 export TFC_ADDRESS=https://app.terraform.io
