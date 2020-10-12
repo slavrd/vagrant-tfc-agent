@@ -21,12 +21,12 @@ The provisioned VM will have the the TFC Agents binaries installed in `/opt/tfc-
 
   * Bring up a VM with a specific version of the TFC agent e.g. `0.1.2`
 
-  ```
+  ```bash
   TFCA_VER=0.1.2 vagrant up
   ```
 * Login to the VM
 
-```
+```bash
 vagrant ssh
 ```
 
