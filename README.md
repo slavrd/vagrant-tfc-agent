@@ -33,11 +33,16 @@ vagrant ssh
 * Set-up the TFC agent environment variables according to the [documentation](https://www.terraform.io/docs/cloud/workspaces/agent.html#start-the-agent). For example
 
 ```bash
-export TFC_ADDRESS=https://app.terraform.io
 export TFC_AGENT_TOKEN=<VALID_TFC_AGENT_POOL_TOKEN>
 export TFC_AGENT_LOG_LEVEL=TRACE
-export TFC_AGENT_DISABLE_UPDATE=TRUE
 export TFC_AGENT_SINGLE=FALSE
+export TFC_ADDRESS=https://app.terraform.io
+
+# For TFC agents >= 1.0
+export TFC_AGENT_AUTO_UPDATE=disabled # other options - minor|patch
+
+# For TFC agents < 1.0 
+export TFC_AGENT_DISABLE_UPDATE=TRUE
 ```
 
 * Start the TFC Agent
